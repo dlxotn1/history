@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>랜덤 역사 퀴즈</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>랜덤 역사 퀴즈</h1>
+        <div id="question-area">
+            <p id="score">현재 점수: 0</p>
+            <h2 id="question">문제가 여기에 표시됩니다.</h2>
+            <div id="options" class="options-grid">
+                </div>
+            <p id="feedback-message" class="hidden"></p>
+            <button id="next-question-button" class="hidden">다음 문제</button>
+        </div>
+        <div id="result-area" class="hidden">
+            <h2>게임 종료!</h2>
+            <p id="final-score">최종 점수: 0</p>
+            <button id="restart-button">다시 시작</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

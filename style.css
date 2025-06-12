@@ -1,0 +1,138 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.quiz-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+#score {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+#question {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: #333;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.option-button {
+    background-color: #e0e0e0;
+    color: #333;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.option-button:hover:not(.disabled) {
+    background-color: #d0d0d0;
+    transform: translateY(-2px);
+}
+
+.option-button:active:not(.disabled) {
+    transform: translateY(0);
+}
+
+/* 정답/오답 표시 스타일 */
+.option-button.correct {
+    background-color: #8bc34a; /* 연한 녹색 */
+    color: white;
+}
+
+.option-button.wrong {
+    background-color: #ef5350; /* 연한 빨간색 */
+    color: white;
+}
+
+.option-button.disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+#feedback-message {
+    font-size: 1.1em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#feedback-message.correct-feedback {
+    color: #4CAF50;
+}
+
+#feedback-message.wrong-feedback {
+    color: #D32F2F;
+}
+
+#next-question-button, #restart-button {
+    background-color: #2196F3; /* 파란색 */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+#next-question-button:hover, #restart-button:hover {
+    background-color: #1976D2;
+}
+
+#result-area {
+    margin-top: 20px;
+}
+
+#result-area h2 {
+    color: #D32F2F;
+}
+
+#final-score {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+}
+
+.hidden {
+    display: none;
+}
