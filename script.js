@@ -99,6 +99,11 @@ const questions = [
         options: ["지청천", "박제순", "노덕술", "박흥식"],
         answer: "지청천"
     },
+            {
+        question: "독립운동가가 아닌 인물은?",
+        options: ["홈범도", "안창호", "김좌진", "고영희"],
+        answer: "고영희"
+    },
 ];
 
 let currentScore = 0;
