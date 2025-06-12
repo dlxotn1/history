@@ -94,6 +94,11 @@ const questions = [
         options: ["오고타이 칸", "바투 칸", "쿠빌라이 칸", "칭키즈 칸"],
         answer: "칭기즈 칸"
     },
+        {
+        question: "독립운동가인 인물은?",
+        options: ["지청천", "박제순", "노덕술", "박흥식"],
+        answer: "지청천"
+    },
 ];
 
 let currentScore = 0;
