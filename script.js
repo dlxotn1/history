@@ -92,7 +92,7 @@ const questions = [
     {
         question: "몽골제국의 정복자 이름은은?",
         options: ["오고타이 칸", "바투 칸", "쿠빌라이 칸", "칭키즈 칸"],
-        answer: "칭기즈 칸칸"
+        answer: "칭기즈 칸"
     },
 ];
 
